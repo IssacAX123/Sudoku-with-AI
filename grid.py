@@ -12,6 +12,13 @@ class GameGrid:
 
     def print_grid(self):
         for row in GameGrid.game_grid:
-            print(row)
+            for column_index, column in enumerate(row):
+                if (column_index + 1) % 9 != 0:
+                    if (column_index+1) != 9 and (column_index + 1) % 3 == 0:
+                        print(column, end="-")
+                    else:
+                        print(column, end="")
+                else:
+                    print(column)
 
 
