@@ -2,8 +2,8 @@ from random import randint
 
 class Cell:
     def __init__(self):
-        self.__available = [i for i in range(1,10)]
-        self.__chosen = 0
+        self.__available = [str(i) for i in range(1, 10)]
+        self.__chosen = ' '
 
     def get_length(self):
         return len(self.__available)
@@ -18,5 +18,8 @@ class Cell:
         if number in self.__available:
             self.__available.remove(number)
         else:
-            print('number not in list')
+            return False
+
+    def __str__(self):
+        return self.__chosen
         

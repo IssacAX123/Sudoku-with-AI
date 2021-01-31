@@ -1,6 +1,4 @@
-from game_grid import GameGrid
+from solution_grid import SolutionGrid
 
-obj_grid = GameGrid()
-obj_grid.create_empty_grid()
-obj_grid.generate_filler('easy')
+obj_grid = SolutionGrid()
 obj_grid.print_grid()
