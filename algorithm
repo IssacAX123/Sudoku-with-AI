@@ -1,0 +1,5 @@
+Place a random number anywhere
+Remove that number option from the row, column and 3x3 grid
+choose a cell that has the least amount of options
+do the same with that cell
+If a cell cant have that number places go back a step and find the most options
